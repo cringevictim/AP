@@ -1,7 +1,10 @@
 cmake_minimum_required(VERSION 3.2)
 project(labs-ap VERSION 0.3)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD_REQUIRED true)
+
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 
 if(WIN32)
