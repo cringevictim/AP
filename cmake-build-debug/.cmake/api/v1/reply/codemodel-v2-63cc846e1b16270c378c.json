@@ -1,0 +1,339 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "11",
+					"jsonFile" : "directory-11-Debug-948c0d4b81eafc9b5f7f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "11",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "12",
+					"jsonFile" : "directory-12-Debug-dc063726c0f198e2b6b1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "12",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "13",
+					"jsonFile" : "directory-13-Debug-3b15b18982da09d783cb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "13",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "14",
+					"jsonFile" : "directory-14-Debug-5f59e56f631e4f856283.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "14",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "15",
+					"jsonFile" : "directory-15-Debug-ad691d094ef659ecd41f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "15",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "16",
+					"jsonFile" : "directory-16-Debug-8dd3e3afc17fba5ba67f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "16",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "17",
+					"jsonFile" : "directory-17-Debug-5a6d7760c3e71fb2fdb4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 7,
+					"source" : "17",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "KP2",
+					"jsonFile" : "directory-KP2-Debug-5775a54d026f121152f6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 8,
+					"source" : "KP2",
+					"targetIndexes" : 
+					[
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "labs-ap"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "11",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "12",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "13",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "14",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "15",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "16",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "17",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "KP2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "11::@4410fc15c5a3cde7a2b5",
+					"jsonFile" : "target-11-Debug-ecd19efd414197d6ee2a.json",
+					"name" : "11",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "12::@1a9a118cb653759c3fcb",
+					"jsonFile" : "target-12-Debug-c9778c418e5e138c4eb6.json",
+					"name" : "12",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "13::@1ad7a51ebb6db8cfd0f4",
+					"jsonFile" : "target-13-Debug-c45e877388ded37d379e.json",
+					"name" : "13",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "14::@1f5272c162bddcec5449",
+					"jsonFile" : "target-14-Debug-e74d5d2d2408e2408c6d.json",
+					"name" : "14",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "15::@71f0c2511c6d5dae680e",
+					"jsonFile" : "target-15-Debug-610a6144f7681306fef4.json",
+					"name" : "15",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "16::@958b08cb3a6f8252890b",
+					"jsonFile" : "target-16-Debug-ad6be0663217c9307cdf.json",
+					"name" : "16",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "17::@c8b6a189ddbf2b1dd605",
+					"jsonFile" : "target-17-Debug-ae605480094198c1cb2b.json",
+					"name" : "17",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "KP2::@c4530bb315445e91a7ae",
+					"jsonFile" : "target-KP2-Debug-a10c677484eda1450037.json",
+					"name" : "KP2",
+					"projectIndex" : 8
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/cringevictim/Projects/AP/cmake-build-debug",
+		"source" : "/home/cringevictim/Projects/AP"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
