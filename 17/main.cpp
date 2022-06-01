@@ -125,10 +125,10 @@ void draw_y_axis(RenderWindow& a_window, float xl, float xr, float yb, float yt,
 
 int main()
 {
-    float x_left = -4, x_right = 4, y_bottom = -4, y_top = 4, zoom = 1;
+    float x_left = -5, x_right = 5, y_bottom = -5, y_top = 5, zoom = 1;
+    float x_left_starting = x_left, x_right_starting = x_right, y_bottom_starting = y_bottom, y_top_starting = y_top;
     Font font;
-    font.loadFromFile("my_font.otf");
-//    cin >> x_left >> x_right;
+    font.loadFromFile("calibri.otf");
     if ((x_left > 0) && (x_left < 2)) {
         y_bottom = -4 * M_PI;
         y_top = 4 * M_PI;
@@ -151,15 +151,17 @@ int main()
                 case Event::Closed:
                     window.close();
                 case Event::MouseWheelMoved:
-                    if ((event.mouseWheel.delta == 1) && (zoom < 10)) {
-                        zoom *= 1.2;
+                    if ((event.mouseWheel.delta == 1) && (zoom < (abs(x_left_starting)+abs(x_right_starting))/2)) {
+                        zoom++;
+                        //cout << "1: " << zoom << endl;
                         x_left++;
                         x_right--;
                         y_bottom++;
                         y_top--;
                     }
-                    else if ((event.mouseWheel.delta == -1) && (zoom > 0.1)) {
-                        zoom *= 0.7;
+                    else if ((event.mouseWheel.delta == -1) && (zoom > -((abs(x_left_starting)+abs(x_right_starting))/2)*2) ) {
+                        zoom--;
+                        //cout << "2: " << zoom << endl;
                         x_left--;
                         x_right++;
                         y_bottom--;
@@ -167,7 +169,7 @@ int main()
                     }
             }
         }
-        float moving_speed = 0.1;
+        float moving_speed = 0.01;
         if (Keyboard::isKeyPressed(Keyboard::Down)) {
             y_bottom -= moving_speed;
             y_top -= moving_speed;
