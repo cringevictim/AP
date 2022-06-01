@@ -80,7 +80,7 @@ void draw_x_axis(RenderWindow& a_window, float xl, float xr, float yb, float yt,
     }
 }
 
-void draw_y_axis(RenderWindow& a_window, float xl, float xr, float yb, float yt, Font& a_font, VertexArray& axis) //Отрисовка оси ОХ
+void draw_y_axis(RenderWindow& a_window, float xl, float xr, float yb, float yt, Font& a_font, VertexArray& axis)
 {
     float xpic, markl, markr; int i;
     Text name("Y", a_font);
@@ -125,7 +125,7 @@ void draw_y_axis(RenderWindow& a_window, float xl, float xr, float yb, float yt,
 
 int main()
 {
-    float x_left = -5, x_right = 5, y_bottom = -5, y_top = 5, zoom = 1;
+    float x_left = -1, x_right = 6, y_bottom = -5, y_top = 2, zoom = 1;
     float x_left_starting = x_left, x_right_starting = x_right, y_bottom_starting = y_bottom, y_top_starting = y_top;
     Font font;
     font.loadFromFile("calibri.otf");
