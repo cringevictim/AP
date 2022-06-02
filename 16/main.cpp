@@ -1,19 +1,22 @@
-#include <stdio.h>
-#define PRINT printf("This text is on line %d, name of file: %s\n",__LINE__,__FILE__);
-#define N 5
+#include <iostream>
 
+#define PRINT_ERROR(reason) \
+    std::cerr << "An error occured in file " << __FILE__ \
+    << " in function " << __func__ << " on line " << __LINE__ << ". " \
+    << "Reason: " << (reason) << std::endl
+
+float div(float &a, float &b){
+    if(!b) {
+        PRINT_ERROR("Division by zero");
+        exit(1);
+    }
+    else return a/b;
+}
 
 int main()
 {
-    PRINT;
-#line 10
-    PRINT;
-#line 20 "HELLO.cpp"
-    PRINT;
-    int mas[N];
-    for (int i = 0; i < N; i++) {
-        mas[i] = i;
-        printf("mas[%d] = %d\n", i, i);
-    }
-    PRINT;
+    float a = 10, b = 0, result;
+    result = div(a,b);
+    std::cout << "Result: " << result << std::endl;
+    return 0;
 }

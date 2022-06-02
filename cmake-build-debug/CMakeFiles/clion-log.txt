@@ -1,4 +1,4 @@
-/var/lib/snapd/snap/clion/190/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -S /home/cringevictim/Projects/AP -B /home/cringevictim/Projects/AP
+/var/lib/snapd/snap/clion/193/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -S /home/cringevictim/Projects/AP -B /home/cringevictim/Projects/AP
 -- Adding subdirectories
 -- Adding subdirectories - done
 -- Configuring done
