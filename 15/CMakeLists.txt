@@ -5,4 +5,4 @@ include_directories(
     .
 )
 
-add_executable(${PROJECT_NAME} laba_15.cpp LinkedList.cpp LinkedList.h)
+add_executable(${PROJECT_NAME} main.cpp)
