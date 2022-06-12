@@ -25,3 +25,9 @@ build/
 /.cmake/
 /cmake-build-debug/
 /CMakeFiles/
+/Kursach/cmake_install.cmake
+/Kursach/Makefile
+/Kursach/imgui-master/
+/Kursach/implot-master/
+/Kursach/Kursach
+/Kursach/CMakeFiles/

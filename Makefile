@@ -220,6 +220,19 @@ KP2/fast:
 	$(MAKE) $(MAKESILENT) -f KP2/CMakeFiles/KP2.dir/build.make KP2/CMakeFiles/KP2.dir/build
 .PHONY : KP2/fast
 
+#=============================================================================
+# Target rules for targets named Kursach
+
+# Build rule for target.
+Kursach: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Kursach
+.PHONY : Kursach
+
+# fast build rule for target.
+Kursach/fast:
+	$(MAKE) $(MAKESILENT) -f Kursach/CMakeFiles/Kursach.dir/build.make Kursach/CMakeFiles/Kursach.dir/build
+.PHONY : Kursach/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -236,6 +249,7 @@ help:
 	@echo "... 16"
 	@echo "... 17"
 	@echo "... KP2"
+	@echo "... Kursach"
 .PHONY : help
 
 
