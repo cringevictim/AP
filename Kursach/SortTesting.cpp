@@ -2,6 +2,7 @@
 #include <ctime>
 #include <vector>
 #include <cmath>
+#include "ArrayMethods.h"
 #include "SortTesting.h"
 #include "SortingAlgorithms.h"
 
@@ -13,7 +14,7 @@ bool inRange(float x, float low, float high)
 float getTimeQuickSort(std::vector<int> &array, int amount, int times){
     float fullTime = 0;
     for(int i = 0; i < times; i++){
-        sa::fillVecRandomInt(array, amount);
+        am::fillVecRandomInt(array, amount);
         clock_t startTime = clock();
         sa::quickSort(array);
         clock_t endTime = clock();
@@ -25,7 +26,7 @@ float getTimeQuickSort(std::vector<int> &array, int amount, int times){
 float getTimeMergeSort(std::vector<int> &array, int amount, int times){
     float fullTime = 0;
     for(int i = 0; i < times; i++){
-        sa::fillVecRandomInt(array, amount);
+        am::fillVecRandomInt(array, amount);
         clock_t startTime = clock();
         sa::mergeSort(array);
         clock_t endTime = clock();
@@ -37,7 +38,7 @@ float getTimeMergeSort(std::vector<int> &array, int amount, int times){
 float getTimeHeapSort(std::vector<int> &array, int amount, int times){
     float fullTime = 0;
     for(int i = 0; i < times; i++){
-        sa::fillVecRandomInt(array, amount);
+        am::fillVecRandomInt(array, amount);
         clock_t startTime = clock();
         sa::heapSort(array);
         clock_t endTime = clock();
@@ -46,7 +47,7 @@ float getTimeHeapSort(std::vector<int> &array, int amount, int times){
     return fullTime;
 }
 
-void test::testSortingAlgorythms() {
+void test::testSortingAlgorithms() {
     std::vector<int> toSort, toCompareWith;
     bool isPassed = true;
     int times = 100, amount = 1000, reps = 10;
@@ -98,4 +99,47 @@ void test::testSortingAlgorythms() {
     if(isPassed){
         std::cout << "Test passed: HeapSort average complexity is O(nlog(n))." << std::endl;
     } else std::cout << "HeapSort test failed." << std::endl;
+}
+
+void test::demSortingAlgorithms(int amount){
+    std::vector<int> array;
+    clock_t endTime, startTime;
+    float fullTime;
+
+    std::cout << "QuickSort demonstration:\nSource:" << std::endl;
+    am::fillVecRandomInt(array, amount);
+    am::printIntVec(array);
+    startTime = clock();
+    sa::quickSort(array);
+    endTime = clock();
+    fullTime += (float(endTime - startTime)) / CLOCKS_PER_SEC;
+    std::cout << "Time: " << fullTime << std::endl;
+    std::cout << "Result:" << std::endl;
+    am::printIntVec(array);
+    std::cout << std:: endl;
+
+    std::cout << "MergeSort demonstration:\nSource:" << std::endl;
+    am::fillVecRandomInt(array, amount);
+    am::printIntVec(array);
+    startTime = clock();
+    sa::mergeSort(array);
+    endTime = clock();
+    fullTime += (float(endTime - startTime)) / CLOCKS_PER_SEC;
+    std::cout << "Time: " << fullTime << std::endl;
+    std::cout << "Result:" << std::endl;
+    am::printIntVec(array);
+    std::cout << std:: endl;
+
+    std::cout << "HeapSort demonstration:\nSource:" << std::endl;
+    am::fillVecRandomInt(array, amount);
+    am::printIntVec(array);
+    startTime = clock();
+    sa::heapSort(array);
+    endTime = clock();
+    fullTime += (float(endTime - startTime)) / CLOCKS_PER_SEC;
+    std::cout << "Time: " << fullTime << std::endl;
+    std::cout << "Result:" << std::endl;
+    am::printIntVec(array);
+    std::cout << "----------------------" <<std:: endl;
+
 }

@@ -7,6 +7,4 @@ namespace sa{
     void mergeSort(std::vector<int>& array);
 
     void heapSort(std::vector<int>& array);
-
-    void fillVecRandomInt(std::vector<int>& array, int amount);
 }

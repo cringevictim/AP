@@ -126,7 +126,3 @@ void sa::heapSort(std::vector<int> &array) {
 }
 
 
-void sa::fillVecRandomInt(std::vector<int>& array, int amount){
-    if(!array.empty()) array.clear();
-    for(int i = 0; i < amount; i++) array.push_back(rand()%amount);
-}

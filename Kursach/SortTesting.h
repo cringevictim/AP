@@ -1,5 +1,7 @@
 #pragma once
 
 namespace test{
-    void testSortingAlgorythms();
+    void testSortingAlgorithms();
+
+    void demSortingAlgorithms(int amount);
 }
