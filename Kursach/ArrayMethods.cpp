@@ -34,10 +34,30 @@ void am::fillFromFile(std::vector<int> &array, std::string fileName) {
         }
         std::cout << std::endl;
     } else {
-        file.close();
         std::cout << "File named [" << fileName << "] doesn't exist!" << std::endl;
+        file.close();
         return;
     }
     std::cout << "Array filled successfully;" << std::endl;
+    file.close();
+}
+
+void am::saveArray(std::vector<int> &array) {
+    std::string fileName;
+    std::cout << "Enter name of file to save: ";
+    std::cin >> fileName;
+    std::fstream file;
+    file.open(fileName, std::fstream::out);
+    if(file.is_open()){
+        for(int i = 0; i < array.size(); i++){
+            file << array.at(i) << " ";
+        }
+
+    } else {
+        std::cout << "Error occurred;" << std::endl;
+        file.close();
+        return;
+    }
+    std::cout << fileName <<" was created;" << std::endl;
     file.close();
 }

@@ -10,4 +10,6 @@ namespace am{
     void fillManually(std::vector<int>& array, int amount);
 
     void fillFromFile(std::vector<int>& array, std::string fileName);
+
+    void saveArray(std::vector<int>& array);
 }

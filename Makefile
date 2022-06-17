@@ -221,17 +221,17 @@ KP2/fast:
 .PHONY : KP2/fast
 
 #=============================================================================
-# Target rules for targets named Kursach
+# Target rules for targets named SortingAlgorithms
 
 # Build rule for target.
-Kursach: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Kursach
-.PHONY : Kursach
+SortingAlgorithms: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SortingAlgorithms
+.PHONY : SortingAlgorithms
 
 # fast build rule for target.
-Kursach/fast:
-	$(MAKE) $(MAKESILENT) -f Kursach/CMakeFiles/Kursach.dir/build.make Kursach/CMakeFiles/Kursach.dir/build
-.PHONY : Kursach/fast
+SortingAlgorithms/fast:
+	$(MAKE) $(MAKESILENT) -f Kursach/CMakeFiles/SortingAlgorithms.dir/build.make Kursach/CMakeFiles/SortingAlgorithms.dir/build
+.PHONY : SortingAlgorithms/fast
 
 # Help Target
 help:
@@ -249,7 +249,7 @@ help:
 	@echo "... 16"
 	@echo "... 17"
 	@echo "... KP2"
-	@echo "... Kursach"
+	@echo "... SortingAlgorithms"
 .PHONY : help
 
 

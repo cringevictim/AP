@@ -287,6 +287,15 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Value Computed by CMake
+CXX_BINARY_DIR:STATIC=/home/cringevictim/Projects/AP/Kursach
+
+//Value Computed by CMake
+CXX_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+CXX_SOURCE_DIR:STATIC=/home/cringevictim/Projects/AP/Kursach
+
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 
@@ -378,6 +387,15 @@ SFML_DIR:PATH=/usr/lib64/cmake/SFML
 SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
 
 //Value Computed by CMake
+SortingAlgorithms_BINARY_DIR:STATIC=/home/cringevictim/Projects/AP/Kursach
+
+//Value Computed by CMake
+SortingAlgorithms_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+SortingAlgorithms_SOURCE_DIR:STATIC=/home/cringevictim/Projects/AP/Kursach
+
+//Value Computed by CMake
 Test_BINARY_DIR:STATIC=/home/cringevictim/Projects/AP/Test
 
 //Value Computed by CMake
@@ -403,6 +421,15 @@ labs-ap_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 labs-ap_SOURCE_DIR:STATIC=/home/cringevictim/Projects/AP
+
+//Value Computed by CMake
+lmao_BINARY_DIR:STATIC=/home/cringevictim/Projects/AP/Kursach
+
+//Value Computed by CMake
+lmao_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+lmao_SOURCE_DIR:STATIC=/home/cringevictim/Projects/AP/Kursach
 
 //Value Computed by CMake
 lopengl_BINARY_DIR:STATIC=/home/cringevictim/Projects/AP/Test

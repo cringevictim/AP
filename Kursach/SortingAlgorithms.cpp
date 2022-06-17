@@ -35,31 +35,22 @@ void merge(std::vector<int> &array, int pos1, int pos2)
             mid = pos1 + (pos2 - pos1) / 2,
             j = mid + 1,
             d[array.size()];
-
-    std::vector<int> tmp;
-
-    while (i <= mid && j <= pos2){
-
-        if (array.at(i) <= array.at(j)) {
+    while(i <= mid && j <= pos2){
+        if(array.at(i) <= array.at(j)) {
             d[t] = array.at(i); i++;
         }
-        else {
+        else{
             d[t] = array.at(j); j++;
         }
         t++;
     }
-
-    while (i <= mid){
+    while(i <= mid){
         d[t] = array.at(i); i++; t++;
-
     }
-
-    while (j <= pos2){
+    while(j <= pos2){
         d[t] = array.at(j); j++; t++;
     }
-
-    for (i = 0; i < t; i++)
-    array.at(pos1 + i) = d[i];
+    for(i = 0; i < t; i++) array.at(pos1 + i) = d[i];
 }
 
 void mergeSortCall(std::vector<int> &array, int pos1, int pos2)
@@ -89,39 +80,32 @@ void sa::mergeSort(std::vector<int> &array) {
     mergeSortCall(array, 0, array.size()-1);
 }
 
-void max_heapify(std::vector<int> &array, int i, int size)
+void heapify(std::vector<int> &array, int i, int size)
 {
     int largest, l = (2*i) + 1, r = l + 1;
-
     if(l < size && array.at(l) > array.at(i))
         largest = l;
     else
         largest = i;
-
     if(r < size && array.at(r) > array.at(largest))
         largest = r;
-
     if(largest != i)
     {
         std::swap(array.at(i), array.at(largest));
-        max_heapify(array, largest, size);
+        heapify(array, largest, size);
     }
 }
 
-void maxHeap(std::vector<int> &array)
-{
-    for(int i = (array.size() / 2); i >= 0; i--)
-        max_heapify(array, i, array.size());
-}
 
 void sa::heapSort(std::vector<int> &array) {
-    maxHeap(array);
+    for(int i = (array.size() / 2); i >= 0; i--)
+        heapify(array, i, array.size());
     int sz = array.size();
     for(int i = array.size() - 1; i > 0; i--)
     {
         std::swap(array[0], array[i]);
         sz--;
-        max_heapify(array, 0, sz);
+        heapify(array, 0, sz);
     }
 }
 

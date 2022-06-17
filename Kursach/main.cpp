@@ -1,13 +1,21 @@
+//Program:"SortingAlgorithms"
+//Developer:Nikolaiev Roman Yurievich
+//Date: 10/06/22
+//Purpose:Data sorting and complexity proving
+//Limits:Not recommended to use arrays longer than 10^8 elements
+
+
 #include <iostream>
 #include <vector>
 #include <ctime>
 #include "SortingAlgorithms.h"
-#include "SortTesting.h"
+#include "SortData.h"
 #include "ArrayMethods.h"
 
 int main()
 {
     srand(time(nullptr));
+    int limit = 10^7;
     std::vector<int> array;
     std::string fileName;
     clock_t startTime, endTime;
@@ -23,7 +31,8 @@ int main()
                      "\n5.Sort array using MergeSort;"
                      "\n6.Sort array using HeapSort;"
                      "\n7.Print array;"
-                     "\n8.Test sorting algorithms complexity" << std::endl;
+                     "\n8.Generate data file;"
+                     "\n9.Save array in file;" << std::endl;
         std::cout << "Choose an option: " << std::endl;
         std::cin >> choice;
         switch(choice){
@@ -72,10 +81,10 @@ int main()
                 am::printIntVec(array);
                 break;
             case 8:
-                test::testSortingAlgorithms();
+                test::getAlgorithmsData();
                 break;
             case 9:
-                test::demSortingAlgorithms(30);
+                am::saveArray(array);
                 break;
             default:
                 break;
